@@ -20,6 +20,11 @@ keys
 
 def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
+  library["get_emoticon"].each do |e, j|
+    if e.include?(emoticon)
+    puts j
+    end
+  end
 end
 
 def get_english_meaning
