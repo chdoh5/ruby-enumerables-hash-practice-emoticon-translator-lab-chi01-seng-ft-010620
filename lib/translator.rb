@@ -25,7 +25,7 @@ def get_japanese_emoticon(file_path, emoticon)
     puts j
     end
   end
-  puts j
+  puts j.to_s
 end
 
 def get_english_meaning
