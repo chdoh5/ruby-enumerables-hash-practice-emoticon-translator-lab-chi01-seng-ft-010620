@@ -23,7 +23,7 @@ def get_japanese_emoticon(file_path, emoticon)
   library["get_emoticon"].each do |e, j|
     if e == emoticon
       return j
-    else return "Sorry, that emoticon was not found"
+    else  "Sorry, that emoticon was not found"
     end
   end
 end
