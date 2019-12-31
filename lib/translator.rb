@@ -20,10 +20,10 @@ keys
 
 def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
+  answer = nil
   library["get_emoticon"].each do |e, j|
-    if e == emoticon
-      return j
-    else  "Sorry, that emoticon was not found"
+    if emoticon == e 
+      answer = j
     end
   end
 end
